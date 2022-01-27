@@ -530,8 +530,10 @@ footer > p {
         top:calc(100vh - 50px);
     }
 
-    #about-me-container {
+    main #about-me-container {
         text-align: center;
+        background-position: center;
+        background-size: 300px;
     }
 
     #about-me-container > article > h4 {
