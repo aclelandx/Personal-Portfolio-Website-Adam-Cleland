@@ -15,7 +15,7 @@
     <!-- Header And Navigation Section Begins -->
     <header>
         <nav>
-            <img src="./assets/images/logo-white.svg" alt="Logo for Adam Cleland; Three white lines with an angled bracket at the bottom">
+            <img src="./assets/images/logo-white.svg" alt="Logo for Adam Cleland; Three white lines with an angled bracket at the bottom" tabindex="0" id="logo">
             <h1>Adam Cleland</h1>
             <ul>
                 <li>
@@ -25,12 +25,13 @@
                     <a href="#projects-container">Projects</a>
                 </li>
                 <li>
-                    <a href="./assets/resume/resume.pdf" target="_blank">Resume</a>
+                    <a href="./assets/resume/adam-cleland-resume.pdf" onclick="openPdf(event, 'assets/pdf/a_pdf_doc.pdf', 'Adam-Cleland-Resume.html');" target="_blank">Resume</a>
                 </li>
                 <li>
-                    <a href="#about-me-container">Contact</a>
+                    <a href="#contact-me">Contact</a>
                 </li>
             </ul>
+            <img src="./assets/images/exit-icon-white.svg" tabindex="0" alt="image of a white X" id="exit-nav">
         </nav>
     </header>
     <!-- Header And Navigation Section Ends. -->
@@ -74,46 +75,60 @@
 
         <section id="projects-container">
             <figure id="project-1" alt="has a background image of a screenshot of the horiseon webpage with the hero image of four people all looking at a document on the computer">
-                <article class="project-info">
-                    <p>SEO-Refactor</p>
-                    <p>Html5, CSS3</p>
-                </article>
+                <a href="https://aclelandx.github.io/SEO-Refactor-HTML-Horiseon/" target="_blank">
+                    <article class="project-info">
+                        <p>SEO-Refactor</p>
+                        <p>Html5, CSS3</p>
+                    </article>
+                </a>
             </figure>
             <figure id="project-2" alt="Background place holder image that displays the text of project 2 placeholder in all capital letters.">
-                <article>
-                    <p>Project : 2</p>
-                    <p>Code Language</p>
-                </article>
+                <a href="#" target="blank">
+                    <article>
+                        <p>Project : 2</p>
+                        <p>Code Language</p>
+                    </article>
+                </a>
             </figure>
             <figure id="project-3" alt="Background place holder image that displays the text of project 3 placeholder in all capital letters.">
-                <article>
-                    <p>Project : 3</p>
-                    <p>Code Language</p>
-                </article>
+                <a href="#" target="blank">
+                    <article>
+                        <p>Project : 3</p>
+                        <p>Code Language</p>
+                    </article>
+                </a>
             </figure>
             <figure id="project-4" alt="Background place holder image that displays the text of project 4 placeholder in all capital letters.">
-                <article>
-                    <p>Project : 4</p>
-                    <p>Code Language</p>
-                </article>
+                <a href="#" target="blank">
+                    <article>
+                        <p>Project : 4</p>
+                        <p>Code Language</p>
+                    </article>
+                </a>
             </figure>
             <figure id="project-5" alt="Background place holder image that displays the text of project 5 placeholder in all capital letters.">
-                <article>
-                    <p>Project : 5</p>
-                    <p>Code Language</p>
-                </article>
+                <a href="#" target="blank">
+                    <article>
+                        <p>Project : 5</p>
+                        <p>Code Language</p>
+                    </article>
+                </a>
             </figure>
             <figure id="project-6" alt="Background place holder image that displays the text of project 6 placeholder in all capital letters.">
-                <article>
-                    <p>Project : 6</p>
-                    <p>Code Language</p>
-                </article>
+                <a href="#" target="blank">
+                    <article>
+                        <p>Project : 6</p>
+                        <p>Code Language</p>
+                    </article>
+                </a>
             </figure>
             <figure id="project-7" alt="Background place holder image that displays the text of project 7 placeholder in all capital letters.">
-                <article>
-                    <p>Project : 7</p>
-                    <p>Code Language</p>
-                </article>
+                <a href="#" target="blank">
+                    <article>
+                        <p>Project : 7</p>
+                        <p>Code Language</p>
+                    </article>
+                </a>
             </figure>
         </section>
         <!-- Projects Section Ends. -->
@@ -128,13 +143,13 @@
                 <p>GitHub</p> <hr> <p>aClelandx</p>
             </article>
             <article>
-                <a href="" target="_blank">
+                <a href="https://www.linkedin.com/in/adam-cleland-a1002210a/" target="_blank">
                     <img src="./assets/images/linked-in-icon.svg" alt="Linkedin logo surrounded by a black circle.">
                 </a>
                 <p>Linkedin</p> <hr> <p>Profile</p>
             </article>
             <article>
-                <a href="" target="_blank">
+                <a href="./assets/resume/adam-cleland-resume.pdf" onclick="openPdf(event, 'assets/pdf/a_pdf_doc.pdf', 'Adam-Cleland-Resume.html');" target="_blank">
                     <img src="./assets/images/resume-icon.svg" alt="Icon for a resume Surrounded by a black circle.">
                 </a>
                 <p>Personal</p> <hr> <p>Resume</p>
@@ -153,10 +168,10 @@
         <!-- Footer Begins. -->
         <footer>
             <ul>
-                <li><a href="#">GitHub</a></li>
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Back to the top</a></li>
+                <li><a href="https://github.com/aclelandx" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/adam-cleland-a1002210a/" target="_blank">Linkedin</a></li>
+                <li><a href="./assets/resume/adam-cleland-resume.pdf" onclick="openPdf(event, 'assets/pdf/a_pdf_doc.pdf', 'Adam-Cleland-Resume.html');" target="_blank">Resume</a></li>
+                <li><a href="#hero">Back to the top</a></li>
             </ul>
             <hr>
             <p>©Designed and Developed by Adam Cleland 2022</p>
