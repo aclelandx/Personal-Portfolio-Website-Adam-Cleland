@@ -26,10 +26,10 @@ GitHub Pages : (https://aclelandx.github.io/Personal-Portfolio-Website-Adam-Clel
 
 Screenshot previews of the website
 
-<img scr="./assets/screenshots/portfolio-website-sc-1.png" alt="Screenshot of the first section of my portfolio website containing a picture of me, and the sticky navigation">
-<img scr="./assets/screenshots/portfolio-website-sc-2.png" alt="Screenshot of the second section of my portfolio website containing my about me section, the projects header section along with the top part of the first project">
-<img scr="./assets/screenshots/portfolio-website-sc-3.png" alt="Screenshot of the third section of my portfolio website containing the sticky nav-bar and the projects that i currently have completed along with the placeholders for those yet to come">
-<img scr="./assets/screenshots/portfolio-website-sc-4.png" alt="Screenshot of the fourth section of my portfolio website containing my sticky nav-bar and the contact me section with links to my github, linkedin, resume, and my phone number / email address. The footer can also be seen with some of the same links and copywrite information">
+<img src="./assets/screenshots/portfolio-website-sc-1.png" alt="Screenshot of the first section of my portfolio website containing a picture of me, and the sticky navigation">
+<img src="./assets/screenshots/portfolio-website-sc-2.png" alt="Screenshot of the second section of my portfolio website containing my about me section, the projects header section along with the top part of the first project">
+<img src="./assets/screenshots/portfolio-website-sc-3.png" alt="Screenshot of the third section of my portfolio website containing the sticky nav-bar and the projects that i currently have completed along with the placeholders for those yet to come">
+<img src="./assets/screenshots/portfolio-website-sc-4.png" alt="Screenshot of the fourth section of my portfolio website containing my sticky nav-bar and the contact me section with links to my github, linkedin, resume, and my phone number / email address. The footer can also be seen with some of the same links and copywrite information">
 
 ## Contributing
 Design and Development was done by Adam Cleland
