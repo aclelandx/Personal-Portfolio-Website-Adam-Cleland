@@ -1,0 +1,389 @@
+/* Declaring variables to be used throughout the website */
+
+:root {
+    --primaryColor:#202121;
+    --secondaryColor:#C5C5C4;
+    --tertiaryColor:#FFFFFF;
+    --quaternaryColor:#F9FAFB;
+    --headerStyleLight:300 19pt/26pt 'Open Sans Condensed', sans-serif;
+    --headerStyleBold:700 19pt/26pt 'Open Sans Condensed', sans-serif;
+    --bodyCopyStyle:400 13pt/19pt 'Lato', sans-serif;
+    --navSelectorStyle:400 12pt/13pt 'Lato', sans-serif;
+    --largeSectionSpacing:calc(100% - 100px);
+    --transparentPrimaryColor:rgb(32, 33, 33, .8);
+    --transparentSecondaryColor:rgb(197, 197, 196, .8);
+    --transparentTertiaryColor:rgb(255, 255, 255, .8);
+    --transparentQuaternaryColor:rgb(249, 250, 251, .8);
+    --projectTitle:900 12pt/14pt 'Lato', sans-serif;
+    --projectType:300 14.5pt/14pt 'Lato', sans-serif;
+    --flexBackgroundImage: no-repeat center/cover var(--primaryColor);
+}
+
+/* body { 
+    background-color: var(--primaryColor);
+} */
+
+/* Stylization for the header and navigation section begins. */
+
+body > header {
+    width:100%;
+    position: fixed;
+    height:100px;
+    background-color: var(--primaryColor);
+    color: var(--tertiaryColor);
+    z-index: 10;
+    box-shadow: 3px 3px 6px;
+}
+
+header > nav {
+    width:var(--largeSectionSpacing);
+    max-width:1440px;
+    margin:0px auto;
+    display: block;
+    height:100%;
+}
+
+nav > img {
+    height:65px;
+    margin:17.5px 0px;
+    transform: rotate(0deg);
+    float:left;
+}
+
+nav > h1 {
+    font: var(--headerStyleBold);
+    text-transform: uppercase;
+    height:100%;
+    width:auto;
+    float:left;
+    margin:32px 0px 0px 12.5px;
+    letter-spacing: .06em;
+}
+
+nav > ul {
+    width:auto;
+    float: right;
+    display: inline-block;
+    height:100%;
+    margin-top:39px;
+}
+
+nav > ul > li {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+nav > ul > li > a {
+    font: var(--navSelectorStyle);
+    color:var(--tertiaryColor);
+    text-decoration: none;
+    padding:5px 10px;
+    transition:500ms ease-out;
+}
+
+nav > ul > li > a:hover {
+    background-color: var(--quaternaryColor);
+    color: var(--primaryColor);
+    transition:500ms ease-in;
+}
+
+/* stylization for the header and navigation section ends. */
+
+
+/* Stylization for the main content for portfolio website begins. */
+
+main {
+    width:100%;
+    height:100%;
+    background-color: var(--primaryColor);
+}
+
+
+/* stylization for the hero / Website banner Section begins. */
+    
+main > #hero {
+    width:100%;
+    margin:0px auto;
+    height:650px;
+    background-color: var(--secondaryColor);
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+}
+
+#hero > [src$=".gif"] {
+    width:100%;
+    min-width: 800px;
+    height:500px;
+    position:absolute;
+    top:100px;
+}
+    
+#hero > [src$=".png"] {
+    height:500px;
+    width:455px;
+    min-height:400px;
+    right:calc(50% - 227.5px);
+    top:150px;
+    position: absolute;
+}
+
+#hero > article {
+    width: 100%;
+    height:100%;
+    background-color:var(--transparentPrimaryColor);
+    position: absolute;
+    top:600px;
+    text-align: center;
+}
+
+#hero > article > h2,
+#hero > article > h3 {
+    font: var(--headerStyleLight);
+    color:var(--tertiaryColor);
+    text-transform: uppercase;
+    letter-spacing: .075em;
+    display: inline-block;
+    margin-top:7px;
+}
+
+#hero > article :first-child {
+    margin-right:15px;
+}
+
+#hero > article :last-child {
+    margin-left:15px;
+}
+
+/* stylization for the hero / Website banner Section ends. */
+
+
+/* Stylization for the about me section begins  */
+
+main > #about-me-container {
+    width:100%;
+    height:100%;
+    background-color: var(--primaryColor);
+    background-image: url(../images/logo-black.svg);
+    background-position-x: calc(100% - 400px);
+    background-position-y: center;
+    background-attachment: fixed;
+    background-size:300px;
+    background-repeat:no-repeat;
+}
+
+#about-me-container > article {
+    width: var(--largeSectionSpacing);
+    max-width: 1440px;
+    margin:0px auto;
+    height:100%;
+    padding:75px 0px;
+}
+
+#about-me-container > article > h4 {
+    font: var(--headerStyleBold);
+    color: var(--tertiaryColor);
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+#about-me-container > article > hr {
+    width:45%;
+    height:2px;
+    border:none;
+    background-color:var(--quaternaryColor);
+    margin:15px 0px 15px 0px;
+}
+
+#about-me-container > article  > p {
+    color:var(--quaternaryColor);
+    font: var(--bodyCopyStyle);
+    letter-spacing: .075em;
+    width:60%;
+    height:100%;
+    padding-bottom:15px;
+}
+
+#about-me-container > article > :last-child {
+    padding-bottom:0px;
+}
+
+/* stylization of the about me section ends  */
+
+
+/* Stylization of the projects-header begins. */
+
+main > #projects-header {
+    width:100%;
+    background-color:var(--quaternaryColor);
+    height:100%;
+    padding:50px 0px;
+    background-image: url(../images/project-header-style-marks.svg);
+    background-position: center center;
+    background-size:1080px;
+    background-repeat: no-repeat;
+}
+
+#projects-header > h5 {
+    font: var(--headerStyleBold);
+    color: var(--primaryColor);
+    border: 7px black solid;
+    text-transform: uppercase;
+    padding: 10px 7px 15px 7px;
+    letter-spacing: .06em;
+    text-align: center;
+    max-width:300px;
+    margin:0px auto;
+    position: relative;
+}
+
+#projects-header h5::after {
+    content: url('../images/right-title-bracket.svg');
+    display:inline-block;
+    width:19px;
+    position: relative;
+    padding-right:30px;
+    top:7px;
+}
+
+#projects-header h5::before {
+    content: url('../images/left-title-bracket.svg');
+    display:inline-block;
+    width:19px;
+    position: relative;
+    padding-left:30px;
+    top:7px;
+}
+
+/* Stylization of Projects-Header ends. */
+
+
+/* Stylization of the Projects-Container begins. */
+
+main > #projects-container {
+    width:var(--largeSectionSpacing);
+    margin:0px auto;
+    max-width: 1440px;
+    padding:100px 0px 100px 0px;
+    height:100%;
+    background-color:var(--primaryColor);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 5px 5px;
+}
+
+#projects-container > figure {
+    height:200px;
+    flex: 1 0 275px;
+    min-width: calc((100% / 3) - 20px);
+    background-color: var(--quaternaryColor);
+    overflow: hidden;
+    background: var(--flexBackgroundImage);
+}
+
+#projects-container > figure > article {
+    width:100%;
+    height:100%;
+    background-color: var(--transparentPrimaryColor);
+    position:relative;
+    padding:10px 0px;
+    text-align: center;
+    top:100%;
+    transition: 500ms linear;
+}
+
+#projects-container > figure > article :first-child {
+    font: var(--projectTitle);
+    color:var(--tertiaryColor);
+    letter-spacing: .075em;
+    text-transform: uppercase;
+}
+
+#projects-container > figure > article :last-child {
+    font: var(--projectType);
+    color:var(--tertiaryColor);
+    letter-spacing: .075em;
+    text-transform: uppercase;
+}
+
+#projects-container > figure:hover > article {
+    top:calc(100% - 56px);
+    transition: 500ms linear;
+}
+
+#projects-container > #project-1 {
+    flex-basis:100%;
+    height:400px;
+    background-image: url(../images/project-1-screenshot.jpg);
+}
+
+#projects-container > #project-2 {
+    background-image:url(../images/PLACEHOLDERS_PORJECT2.svg);
+}
+
+#projects-container > #project-3 {
+    background-image:url(../images/PLACEHOLDERS_PROJECT3.svg);
+}
+
+#projects-container > #project-4 {
+    background-image:url(../images/PLACEHOLDERS_PROJECT4.svg);
+}
+
+#projects-container > #project-5 {
+    background-image:url(../images/PLACEHOLDERS_PROJECT5.svg);    
+}
+
+#projects-container > #project-6 {
+    background-image:url(../images/PLACEHOLDERS_PROJECT6.svg);
+}
+
+#projects-container > #project-7 {
+    background-image:url(../images/PLACEHOLDERS_PROJECT7.svg);
+}
+
+/* Stylization Of The Projects-Container Ends. */
+
+
+/* Stylization of the Contact-Me section begins */
+
+main > #contact-me {
+    width:100%;
+    padding:50px;
+    height:100%;
+    margin:0px auto;
+    background-color: var(--quaternaryColor);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 5px 5px;
+}
+
+#contact-me > article {
+    flex: 1 1 0px;
+    min-width: 150px;
+    height:100%;
+    background-color: var(--primaryColor);
+}
+
+#contact-me > article img {
+    width:80%;
+    margin:0px 10%;
+    padding:0px 0px 25px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* font-family: 'Lato', sans-serif; 100 300 400 700 900*/
+/* font-family: 'Open Sans', sans-serif; 300 400 800 */
+/* font-family: 'Open Sans Condensed', sans-serif; 300 700 */
